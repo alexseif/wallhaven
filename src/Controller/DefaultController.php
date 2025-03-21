@@ -117,6 +117,9 @@ final class DefaultController extends AbstractController
         if (!isset($queryParams['purity'])) {
             $queryParams['purity'] = '111'; // Default purity
         }
+        if (!isset($queryParams['sorting'])) {
+            $queryParams['sorting'] = 'toplist'; // Default purity
+        }
 
         // Add the API key to the query parameters
         $queryParams['apikey'] = 'ZiBLWSqP1KePso5g6OWYYEzdjiEJgIda';
